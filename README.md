@@ -40,8 +40,31 @@ npm install
 npm run dev
 ```
 
+## Tests
+
+Backend:
+
+```bash
+cd apps/api
+pytest
+```
+
+Frontend type check:
+
+```bash
+cd apps/web
+npm install
+npm run test
+```
+
 ## AI Provider
 
 The backend defaults to mock mode so development and tests do not require a paid AI provider.
 
 Set `AI_PROVIDER=mock` for deterministic responses. Provider-specific adapters can be added behind `app.services.ai.base.AIAdapter`.
+
+## Documentation
+
+- [Architecture](docs/ARCHITECTURE.md)
+- [API Reference](docs/API.md)
+- [Deployment Notes](docs/DEPLOYMENT.md)
